@@ -1,0 +1,74 @@
+@import '../../variables.scss';
+
+.info {
+  padding-top: 33px;
+}
+
+.info__container {
+  background: $rot_gray_10;
+  display: flex;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 24px 28px;
+  width: 90%;
+
+  @include for-size(tablet-portrait) {
+    margin: 0 auto;
+    width: 72%;
+  }
+}
+
+.info__left {
+  display: flex;
+  flex-direction: column;
+
+  @include for-size(tablet-portrait) {
+    flex-direction: row;
+    padding-right: 20px;
+  }
+}
+
+.info__title {
+  align-items: center;
+  border-bottom: 1px solid $rot_white;
+  display: flex;
+  flex-direction: column;
+  font-weight: $font_light;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+  @include for-size(tablet-portrait) {
+    align-items: flex-start;
+    border-bottom: none;
+    font-size: $font_m2;
+    justify-content: center;
+    margin-bottom: 0;
+    min-width: 210px;
+    padding-bottom: 0;
+  }
+}
+
+.info__bold {
+  font-size: $font_l;
+  font-weight: $font_bold;
+}
+
+.info__body-copy {
+  line-height: 1.5;
+  text-align: center;
+
+  @include for-size(tablet-portrait) {
+    align-items: center;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.info__close {
+  align-items: flex-start;
+  display: flex;
+
+  @include for-size(tablet-portrait) {
+    align-items: center;
+  }
+}

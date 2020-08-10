@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+.cards-grid {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-top: 40px;
+  width: 90%;
+
+  @include for-size(tablet-portrait) {
+    margin: 0 auto;
+    width: 72%;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  height: 550px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+
+  @include for-size(tablet-landscape) {
+    width: 48%;
+  }
+}
+
+.card__info-container {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}

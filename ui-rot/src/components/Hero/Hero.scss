@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.hero {
+  height: 739px;
+  padding-top: 171px;
+  position: relative;
+  width: 100%;
+}
+
+.hero__image {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+
+.hero__container {
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 90%;
+
+  @include for-size(tablet-portrait) {
+    margin: 0 auto;
+    width: 72%;
+  }
+}
