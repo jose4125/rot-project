@@ -1,0 +1,27 @@
+## Stage 1 (production base)
+FROM node:12.18.3 as base
+EXPOSE 80
+WORKDIR app/
+ENV PATH /app/node_modules/.bin:$PATH
+COPY package*.json ./
+# we use npm ci here so only the package-lock.json file is used
+
+## Stage 2 (development)
+FROM base as dev
+ENV NODE_ENV=development
+RUN npm config list \
+    && npm install --only=development \
+    && npm install react-scripts@3.4.1 -g
+EXPOSE 3000
+COPY . .
+USER node
+CMD ["npm",  "start"]
+
+## Stage 3 (production)
+ENV NODE_ENV=production
+RUN npm config list \
+    && npm ci  \
+    && npm install react-scripts@3.4.1 -g \
+    && npm cache clean --force
+COPY . .
+CMD ["npm", "run", "build"]

@@ -1,0 +1,17 @@
+{
+  'extends': ['stylelint-prettier/recommended'],
+  'plugins': [
+    'stylelint-declaration-use-variable',
+    'stylelint-order'
+  ],
+  'rules': {
+    "prettier/prettier": [true, {"singleQuote": true}],
+    'unicode-bom': 'never',
+    'sh-waqar/declaration-use-variable': [['/color/', 'background', 'background-color', 'font-size']],
+    'order/order': [
+        "custom-properties",
+        "declarations"
+    ],
+    'order/properties-alphabetical-order': true
+  }
+}

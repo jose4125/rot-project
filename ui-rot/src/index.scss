@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font_root;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+button {
+  background: $rot_transparent;
+  border: none;
+  cursor: pointer;
+}
