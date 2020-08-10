@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.header {
+  background: $rot_gray_80_rgba;
+  background: $rot_gradient;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 90%;
+
+  @include for-size(tablet-portrait) {
+    width: 72%;
+  }
+}
+
+.header__link {
+  color: $rot_white;
+  font-size: $font_r;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header__link--logo {
+  font-size: $font_logo;
+  text-transform: none;
+}
+
+.header__links-container {
+  display: flex;
+  list-style: none;
+}
+
+.header__item {
+  color: $rot_white;
+  padding: 0 26px;
+}

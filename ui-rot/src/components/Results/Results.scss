@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.results {
+  align-items: center;
+  display: flex;
+}
+
+.results__thumb {
+  align-items: center;
+  color: $rot_white;
+  display: flex;
+  font-size: $font_m3;
+  font-weight: $font_regular;
+  height: 50px;
+  transition: width 0.5s linear;
+}
+.results__thumb--up {
+  background: $rot_green_rgba;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.results__thumb--down {
+  background: $rot_orange_rgba;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.thumb-up__icon {
+  margin-right: 8px;
+  min-width: 27px;
+}
+
+.thumb-down__icon {
+  margin-left: 8px;
+  min-width: 27px;
+}

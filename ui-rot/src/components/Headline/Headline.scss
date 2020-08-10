@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.headline {
+  color: $rot_gray_80;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-top: 40px;
+  width: 90%;
+
+  @include for-size(tablet-portrait) {
+    margin: 0 auto;
+    width: 72%;
+  }
+}
+
+.headline__copy {
+  font-size: $font_xl;
+  font-weight: $font_light;
+  margin: 0;
+}

@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.main-card {
+  width: 100%;
+
+  @include for-size(tablet-landscape) {
+    height: 450px;
+    width: 500px;
+  }
+}
+
+.main-card__top {
+  backdrop-filter: blur(40px);
+  background: $rot_gray_80_rgba_4;
+  color: $rot_white;
+  padding: 35px 30px;
+  width: 100%;
+
+  @include for-size(tablet-landscape) {
+    height: 370px;
+  }
+}
+
+.main-card__opinion {
+  font-size: $font_r;
+  font-weight: $font_light;
+  margin: 0;
+}
+
+.main-card__headLine {
+  font-size: $font_xxl;
+  font-weight: $font_regular;
+  margin: 0;
+
+  @include for-size(tablet-landscape) {
+    font-size: $font_main_header;
+  }
+}
+
+.main-card__body-copy {
+  font-size: $font_r;
+  font-weight: $font_light;
+
+  @include for-size(tablet-landscape) {
+    font-size: $font_main_body;
+  }
+}
+
+.main-card__more-info-link {
+  color: $rot_white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-card__more-info {
+  border-bottom: 1px solid $rot_white;
+  display: inline-block;
+  font-size: $font_s;
+  font-weight: $font_light;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  vertical-align: top;
+}
+
+.main-card__veredict {
+  font-size: $font_s;
+  font-weight: $font_bold;
+  margin: 0;
+
+  @include for-size(tablet-landscape) {
+    font-size: $font_m;
+  }
+}
+
+.main-card__bottom {
+  display: flex;
+  flex-direction: column;
+
+  @include for-size(tablet-portrait) {
+    flex-direction: row;
+    height: 80px;
+  }
+}
+
+.main-card__button-left,
+.main-card__button-right {
+  height: 60px;
+  width: 100%;
+
+  @include for-size(tablet-portrait) {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.thumb-up,
+.thumb-down {
+  width: 40px;
+}

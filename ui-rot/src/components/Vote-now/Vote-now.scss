@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.vote__buttons {
+  align-items: center;
+  display: flex;
+}
+
+.vote__thumb {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 30px;
+}
+
+.vote__thumb--up {
+  background: $rot_green;
+}
+
+.vote__thumb--down {
+  background: $rot_orange;
+}
+
+.vote__button {
+  background: $rot_gray_80_rgba;
+  border: 1px solid $rot_white;
+  color: $rot_white;
+  font-size: $font_s;
+  font-weight: $font_regular;
+  padding: 13px 25px;
+}
+
+.vote__button--again {
+  display: none;
+}

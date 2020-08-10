@@ -1,0 +1,86 @@
+@import '../../variables.scss';
+
+.count-down {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin-top: 43px;
+  position: absolute;
+  width: 100%;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: row;
+    height: 50px;
+  }
+}
+
+.count-down__left,
+.count-down__right {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+
+  @include for-size(tablet-landscape) {
+    height: 50px;
+  }
+}
+
+.count-down__left {
+  background: $rot_gray_20_rgba_4;
+  color: $rot_white;
+  font-size: $font_xs;
+  font-weight: $font_regular;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    border-color: $rot_gray_20_rgba_6 transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+    bottom: -8px;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  @include for-size(tablet-landscape) {
+    justify-content: flex-end;
+    padding-right: 10px;
+    width: 36%;
+
+    &::after {
+      border-color: $rot_transparent $rot_transparent $rot_transparent
+        $rot_gray_20_rgba_6;
+      border-style: solid;
+      border-width: 6px 0 6px 8px;
+      bottom: auto;
+      content: '';
+      height: 0;
+      position: absolute;
+      right: -8px;
+      width: 0;
+    }
+  }
+}
+
+.count-down__right {
+  background: $rot_white_rgba_8;
+  color: $rot_gray_60;
+  font-size: $font_m;
+  font-weight: $font_light;
+
+  @include for-size(tablet-landscape) {
+    font-size: $font_l;
+    justify-content: flex-start;
+    padding-left: 18px;
+    width: 64%;
+  }
+}
+
+.count-down__number {
+  font-weight: $font_regular;
+  margin-right: 13px;
+}
