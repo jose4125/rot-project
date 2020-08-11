@@ -12,7 +12,7 @@
   font-size: $font_m3;
   font-weight: $font_regular;
   height: 50px;
-  transition: width 0.5s linear;
+  transition: width 0.5s linear, background 0.5s linear;
 }
 .results__thumb--up {
   background: $rot_green_rgba;
@@ -36,4 +36,12 @@
 .thumb-down__icon {
   margin-left: 8px;
   min-width: 27px;
+}
+
+.result-thumb--up-zero {
+  background: $rot_orange_rgba;
+}
+
+.result-thumb--down-zero {
+  background: $rot_green_rgba;
 }

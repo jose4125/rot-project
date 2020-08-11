@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Pope Francis",
+    "body_copy": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) ",
+    "image": "https://rot-images.s3-us-west-2.amazonaws.com/Pope%402x.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/Pope_Francis",
+    "positive_votes": 3,
+    "negative_votes": 2,
+    "total_votes": 5,
+    "category": "Religion",
+    "closing_date": 1599282000000,
+    "created_at": 1585717200000
+  }
+]

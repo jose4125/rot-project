@@ -21,6 +21,7 @@
 
   @include for-size(tablet-landscape) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -30,6 +31,10 @@
   margin-bottom: 40px;
   position: relative;
   width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include for-size(tablet-landscape) {
     width: 48%;

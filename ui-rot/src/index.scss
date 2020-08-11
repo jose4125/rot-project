@@ -19,4 +19,8 @@ button {
   background: $rot_transparent;
   border: none;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Kanye West",
+    "body_copy": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "https://rot-images.s3-us-west-2.amazonaws.com/kanye%402x.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/Kanye_West",
+    "positive_votes": 3,
+    "negative_votes": 2,
+    "total_votes": 5,
+    "category": "Entertainment",
+    "closing_date": 1598936400000,
+    "created_at": 1583038800000
+  },
+  {
+    "id": 2,
+    "name": "Cristina Fernández de Kirchner",
+    "body_copy": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "https://rot-images.s3-us-west-2.amazonaws.com/cristina%402x.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
+    "positive_votes": 3,
+    "negative_votes": 4,
+    "total_votes": 7,
+    "category": "Politics",
+    "closing_date": 1598936400000,
+    "created_at": 1583038800000
+  },
+  {
+    "id": 3,
+    "name": "Mark Zuckerberg",
+    "body_copy": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "https://rot-images.s3-us-west-2.amazonaws.com/Mark%402x.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+    "positive_votes": 0,
+    "negative_votes": 0,
+    "total_votes": 0,
+    "category": "Business",
+    "closing_date": 1598936400000,
+    "created_at": 1596258000000
+  },
+  {
+    "id": 4,
+    "name": "Malala Yousafzai",
+    "body_copy": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "https://rot-images.s3-us-west-2.amazonaws.com/malala%402x.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/Malala_Yousafzai",
+    "positive_votes": 5,
+    "negative_votes": 0,
+    "total_votes": 5,
+    "category": "Entertainment",
+    "closing_date": 1598936400000,
+    "created_at": 1596258000000
+  },
+  {
+    "id": 5,
+    "name": "We Bare Bears",
+    "body_copy": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "image": "https://image.posta.com.mx/sites/default/files/styles/fullscreen_desktop_2x/public/screen_shot_2018-10-24_at_5.33.32_pm.jpg",
+    "more_info_url": "https://en.wikipedia.org/wiki/We_Bare_Bears",
+    "positive_votes": 5,
+    "negative_votes": 5,
+    "total_votes": 10,
+    "category": "Entertainment",
+    "closing_date": 1598936400000,
+    "created_at": 1596258000000
+  }
+]
