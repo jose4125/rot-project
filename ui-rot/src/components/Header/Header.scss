@@ -40,9 +40,18 @@
 .header__links-container {
   display: flex;
   list-style: none;
+  display: none;
+
+  @include for-size(tablet-portrait) {
+    display: inline-flex;
+  }
 }
 
 .header__item {
   color: $rot_white;
   padding: 0 26px;
+
+  @include for-size(tablet-portrait) {
+    padding: 0 15px;
+  }
 }
