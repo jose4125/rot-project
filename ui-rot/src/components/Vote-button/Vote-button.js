@@ -7,7 +7,6 @@ import { ReactComponent as ThumbDown } from '../../common/thumb-down@2x.svg';
 import './Vote-button.scss';
 
 function VoteButton(props) {
-  console.log('props', props);
   let elClass = 'vote';
   let icon = null;
 

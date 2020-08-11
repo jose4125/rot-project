@@ -17,6 +17,7 @@
   justify-content: center;
   margin-bottom: 8px;
   margin-right: 10px;
+  min-width: 30px;
   width: 30px;
 }
 
@@ -32,7 +33,7 @@
   font-size: $font_xxl;
   font-weight: $font_regular;
   margin: 0;
-  padding: 0;
+  padding-right: 10px;
 }
 
 .card__time-category {
@@ -44,12 +45,14 @@
 
 .card__time {
   font-weight: $font_bold;
+  margin-right: 3px;
 }
 
 .card__body-copy {
   font-size: $font_r;
   font-weight: $font_light;
-  padding-left: 40px;
+  min-height: 40px;
+  padding: 0 40px;
 }
 
 .card__buttons {

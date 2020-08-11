@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero';
 import Info from '../components/Info/Info';
 import Headline from '../components/Headline/Headline';
 import CardsGrid from '../components/Cards-grid/Cards-grid';
+import Footer from '../components/Footer/Footer';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Info />
       <Headline />
       <CardsGrid />
+      <Footer />
     </div>
   );
 }

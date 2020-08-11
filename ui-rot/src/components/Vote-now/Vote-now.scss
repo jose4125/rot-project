@@ -33,6 +33,6 @@
   padding: 13px 25px;
 }
 
-.vote__button--again {
-  display: none;
+.vote__thumb--active {
+  border: 2px solid $rot_white;
 }
