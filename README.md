@@ -43,7 +43,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - hero image and card images are host in a S3 bucket
 - the more information link goes to the person wikipedia page
 - closing in days comes from the person data `/data/main-person.json` - `closing_date` field
-- closing in days comes from the person data `/data/main-person.json` - `closing_date` field
 - the cards are getting the data from a fetch request `/data/persons.json`
 - the thumb icon next to the person name change to thumb up or thumb down
   - if positive votes are higher than negative votes. it shown thumb up icon
@@ -62,3 +61,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   - if the total votes are positives shown 100% in the positive value and 0% in the negative values
   - if the total votes are positives shown the positive progress bar. it fill all the progress bar width
   - if the total votes are negatives shown the negative progress bar. it fill all the progress bar width
+- when we get the persons data from `/data/persons.json` it is stored in the `localStorage`
+- when we send a vote the data is updated and saved in `localStorage`
+- if you refresh the page the data is not lost
