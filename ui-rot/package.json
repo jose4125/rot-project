@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint './src/**/*.{js,jsx}'",
     "lint:scss": "stylelint --config=.stylelintrc '**/*.scss'",
-    "test:lint": "run-s lint:**"
+    "test:lint": "npm run lint:scss && npm run lint:js"
   },
   "eslintConfig": {
     "extends": "react-app"
