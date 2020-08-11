@@ -39,8 +39,8 @@
 
 .header__links-container {
   display: flex;
-  list-style: none;
   display: none;
+  list-style: none;
 
   @include for-size(tablet-portrait) {
     display: inline-flex;
