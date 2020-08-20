@@ -18,6 +18,7 @@ In the root directory `rot-project/`, you can run:
 
 > you need to install docker and docker componse to run the following command
 
+### `docker-compose build`
 ### `docker-compose up -d`
 
 Runs the app in the development mode.<br />

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ReactComponent as ThumbUp } from '../../common/thumb-up@2x.svg';
-import { ReactComponent as ThumbDown } from '../../common/thumb-down@2x.svg';
+import { ReactComponent as ThumbUp } from '../../common/thumb-up2x.svg';
+import { ReactComponent as ThumbDown } from '../../common/thumb-down2x.svg';
 
 import './Vote-button.scss';
 
