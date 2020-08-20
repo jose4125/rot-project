@@ -6,8 +6,8 @@ import VoteNow from '../Vote-now/Vote-now';
 import Results from '../Results/Results';
 import DateFormatDistance from '../Date-format-distance/Date-format-distance';
 
-import { ReactComponent as ThumbUp } from '../../common/thumb-up@2x.svg';
-import { ReactComponent as ThumbDown } from '../../common/thumb-down@2x.svg';
+import { ReactComponent as ThumbUp } from '../../common/thumb-up2x.svg';
+import { ReactComponent as ThumbDown } from '../../common/thumb-down2x.svg';
 
 import './Card.scss';
 
@@ -46,7 +46,6 @@ function updateLocalStorage(info) {
 
 function Card(props) {
   let {
-    id,
     name,
     body_copy,
     image,
