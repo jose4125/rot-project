@@ -11,7 +11,7 @@ function DB(key) {
   const update = (id, newData) => {
     let localStorageData = get(key);
     let updatedData = localStorageData.map((person) => {
-      if (person.id == id) {
+      if (person.id === id) {
         person = newData;
       }
       return person;

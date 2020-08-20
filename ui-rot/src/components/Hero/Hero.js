@@ -14,7 +14,7 @@ function Hero() {
   };
 
   return (
-    <section className="hero" style={stylesAttr}>
+    <section className="hero" style={stylesAttr} data-testid="hero">
       <div className="hero__container">
         {isLoading ? 'loading...' : <MainCard info={data[0]} />}
       </div>

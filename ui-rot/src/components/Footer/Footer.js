@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { ReactComponent as Facebook } from './facebook2@2x.svg';
-import { ReactComponent as Twitter } from './twitter@2x.svg';
+import { ReactComponent as Facebook } from './facebook2x.svg';
+import { ReactComponent as Twitter } from './twitter2x.svg';
 
 import './Footer.scss';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" data-testid="footer">
       <div className="footer__container">
         <ul className="footer__links">
           <li className="footer__item">

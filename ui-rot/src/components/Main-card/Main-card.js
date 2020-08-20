@@ -9,7 +9,7 @@ import './Main-card.scss';
 function MainCard(props) {
   let { name, body_copy, more_info_url } = props.info;
   return (
-    <div className="main-card">
+    <div className="main-card" data-testid="maincard">
       <div className="main-card__top">
         <p className="main-card__opinion">What's your opinion on</p>
         <h1 className="main-card__headLine">{name}?</h1>
