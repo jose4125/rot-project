@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { usePersons } from '../../custom-hooks/use-persons';
 import Card from '../Card/Card';
 
@@ -12,17 +12,17 @@ function CardsGrid() {
   const [data, isLoading] = usePersons('/data/people.json');
 
   return (
-    <>
+    <section data-testid="cardsgrid">
       {isLoading ? (
         'is loading data'
       ) : (
-        <section className="cards-grid">
+        <div className="cards-grid">
           <div className="cards-grid__container">
             <ul className="cards-container">{data.map(renderCards)}</ul>
           </div>
-        </section>
+        </div>
       )}
-    </>
+    </section>
   );
 }
 

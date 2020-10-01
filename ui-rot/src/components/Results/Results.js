@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ReactComponent as ThumbUp } from '../../common/thumb-up@2x.svg';
-import { ReactComponent as ThumbDown } from '../../common/thumb-down@2x.svg';
+import { ReactComponent as ThumbUp } from '../../common/thumb-up2x.svg';
+import { ReactComponent as ThumbDown } from '../../common/thumb-down2x.svg';
 
 import './Results.scss';
 
@@ -29,17 +29,14 @@ function percentageNum(positive) {
       negativeNum: calcPercentage(negative)(positive + negative),
       negativePer: calcPercentage(negative)(positive + negative),
     };
-
-    return [positive, negative];
   };
 }
 
-function Results({ total, positive, negative }) {
-  //let positivePercentage = calcPercentage(positive)(total);
-  //let negativePercentage = calcPercentage(negative)(total);
+function Results({ positive, negative }) {
   let { positiveNum, positivePer, negativeNum, negativePer } = percentageNum(
     positive
   )(negative);
+
   let thumbUpClass = 'results__thumb results__thumb--up';
   let thumbDownClass = 'results__thumb results__thumb--down';
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import { ReactComponent as Close } from './close@2x.svg';
+import { ReactComponent as Close } from './close2x.svg';
 
 import './Info.scss';
 
 function Info() {
   return (
-    <section className="info">
+    <section className="info" data-testid="info">
       <div className="info__container">
         <div className="info__left">
           <div className="info__title">

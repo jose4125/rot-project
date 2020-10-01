@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import DB from '../../utils/db';
 
@@ -6,8 +6,8 @@ import VoteNow from '../Vote-now/Vote-now';
 import Results from '../Results/Results';
 import DateFormatDistance from '../Date-format-distance/Date-format-distance';
 
-import { ReactComponent as ThumbUp } from '../../common/thumb-up@2x.svg';
-import { ReactComponent as ThumbDown } from '../../common/thumb-down@2x.svg';
+import { ReactComponent as ThumbUp } from '../../common/thumb-up2x.svg';
+import { ReactComponent as ThumbDown } from '../../common/thumb-down2x.svg';
 
 import './Card.scss';
 
@@ -46,7 +46,6 @@ function updateLocalStorage(info) {
 
 function Card(props) {
   let {
-    id,
     name,
     body_copy,
     image,
@@ -103,6 +102,16 @@ function Card(props) {
     setVoted(false);
   };
 
+  const memoResults = useMemo(() => {
+    return (
+      <Results
+        total={totalVotes}
+        positive={positiveVotes}
+        negative={negativeVotes}
+      />
+    );
+  }, [totalVotes, positiveVotes, negativeVotes]);
+
   return (
     <li className="card" style={stylesAttr}>
       <div className="card__info-container">
@@ -135,11 +144,7 @@ function Card(props) {
           </div>
         </div>
         <div className="card__votes">
-          <Results
-            total={totalVotes}
-            positive={positiveVotes}
-            negative={negativeVotes}
-          />
+          {memoResults}
         </div>
       </div>
     </li>
