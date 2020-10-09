@@ -1,0 +1,9 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t jose4125/ui-rot -f ./ui-rot/Dockerfile.dev ./ui-rot
+script:
+  - docker run -e CI=true jose4125/ui-rot npm test
