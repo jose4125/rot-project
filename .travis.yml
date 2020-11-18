@@ -2,8 +2,25 @@ language: generic
 sudo: required
 services:
   - docker
-
+env:
+  global:
+    - HEROKU_APP="$HEROKU_APP_NAME"
 before_install:
-  - docker build -t jose4125/ui-rot -f ./ui-rot/Dockerfile.dev ./ui-rot
+  # install heroku CLI
+  - wget -qO- https://toolbelt.heroku.com/install.sh | sh
+  - docker build -t jose4125/ui-rot-dev -f ./ui-rot/Dockerfile.dev ./ui-rot
 script:
-  - docker run -e CI=true jose4125/ui-rot npm test
+  - docker run -e CI=true jose4125/ui-rot-dev npm test
+after_success:
+  - docker build -t jose4125/ui-rot ./ui-rot
+  # login to docker registries (dockerhub)
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push jose4125/ui-rot
+  # login to heroku
+  - echo "$HEROKU_PASSWORD" | docker login -u "$HEROKU_USERNAME" --password-stdin registry.heroku.com
+
+deploy:
+  provider: script
+  script: bash ./ui-deploy.sh
+  on:
+    branch: master
