@@ -1,0 +1,14 @@
+# build environment
+FROM node:13.12.0-alpine
+WORKDIR /app
+ENV PATH /app/node_modules/.bin:$PATH
+ENV NODE_ENV=production
+COPY package*.json ./
+RUN npm config list \
+    && npm ci  \
+    && npm install react-scripts@3.4.1 -g \
+    && npm cache clean --force
+COPY . ./
+RUN npm run build
+
+CMD serve -p $PORT -s build
