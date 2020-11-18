@@ -1,4 +1,4 @@
-docker build -t jose4125/ui-rot:latest -t registry.heroku.com/$HEROKU_APP/web ./ui-rot
+docker build -t jose4125/ui-rot:latest -t registry.heroku.com/$HEROKU_APP/web ./ui-rot/Dockerfile ./ui-rot
 # push to docker hub
 docker push jose4125/ui-rot:latest
 # push to heroku

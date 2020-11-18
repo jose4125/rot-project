@@ -12,13 +12,10 @@ before_install:
 script:
   - docker run -e CI=true jose4125/ui-rot-dev npm test
 after_success:
-  - docker build -t jose4125/ui-rot ./ui-rot
   # login to docker registries (dockerhub)
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push jose4125/ui-rot
   # login to heroku
   - echo "$HEROKU_PASSWORD" | docker login -u "$HEROKU_USERNAME" --password-stdin registry.heroku.com
-
 deploy:
   provider: script
   script: bash ./ui-deploy.sh
